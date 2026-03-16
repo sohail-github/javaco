@@ -1,0 +1,3 @@
+com\example\microservice\App.class
+com\example\microservice\service\UserService.class
+com\example\microservice\controller\UserController.class
