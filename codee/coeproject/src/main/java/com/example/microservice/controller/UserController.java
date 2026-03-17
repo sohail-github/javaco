@@ -3,8 +3,10 @@ package com.example.microservice.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.lang.NonNull;
 import org.springframework.web.bind.annotation.*;
 import com.example.microservice.service.UserService;
+import com.example.microservice.entity.User;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,12 +37,19 @@ public class UserController {
      * GET /api/users/{id} - Get user by ID
      */
     @GetMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> getUserById(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Object>> getUserById(@NonNull @PathVariable Long id) {
         Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("message", "Retrieved user with ID: " + id);
-        response.put("user", userService.getUserById(id));
-        return ResponseEntity.ok(response);
+        try {
+            User user = userService.getUserById(id);
+            response.put("status", "success");
+            response.put("message", "Retrieved user with ID: " + id);
+            response.put("user", user);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            response.put("status", "error");
+            response.put("message", e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
+        }
     }
 
     /**
@@ -52,50 +61,71 @@ public class UserController {
         String name = userRequest.get("name");
         String email = userRequest.get("email");
 
-        if (name == null || email == null) {
+        if (name == null || email == null || name.trim().isEmpty() || email.trim().isEmpty()) {
             response.put("status", "error");
             response.put("message", "Name and email are required");
             return ResponseEntity.badRequest().body(response);
         }
 
-        response.put("status", "success");
-        response.put("message", "User created successfully");
-        response.put("user", userService.createUser(name, email));
-        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        try {
+            User createdUser = userService.createUser(name, email);
+            response.put("status", "success");
+            response.put("message", "User created successfully");
+            response.put("user", createdUser);
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
+        } catch (Exception e) {
+            response.put("status", "error");
+            response.put("message", "Failed to create user: " + e.getMessage());
+            return ResponseEntity.badRequest().body(response);
+        }
     }
 
     /**
      * PUT /api/users/{id} - Update user
      */
     @PutMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> updateUser(@PathVariable Long id,
+    public ResponseEntity<Map<String, Object>> updateUser(@NonNull @PathVariable Long id,
             @RequestBody Map<String, String> userRequest) {
         Map<String, Object> response = new HashMap<>();
         String name = userRequest.get("name");
         String email = userRequest.get("email");
+        String phone = userRequest.get("phone");
 
-        if (name == null || email == null) {
+        if (name == null || email == null || name.trim().isEmpty() || email.trim().isEmpty()) {
             response.put("status", "error");
             response.put("message", "Name and email are required");
             return ResponseEntity.badRequest().body(response);
         }
 
-        response.put("status", "success");
-        response.put("message", "User with ID " + id + " updated successfully");
-        response.put("user", userService.updateUser(id, name, email));
-        return ResponseEntity.ok(response);
+        try {
+            User updatedUser = userService.updateUser(id, name, email, phone);
+            response.put("status", "success");
+            response.put("message", "User updated successfully");
+            response.put("user", updatedUser);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            response.put("status", "error");
+            response.put("message", e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
+        }
     }
 
     /**
      * DELETE /api/users/{id} - Delete user
      */
     @DeleteMapping("/{id}")
-    public ResponseEntity<Map<String, Object>> deleteUser(@PathVariable Long id) {
+    public ResponseEntity<Map<String, Object>> deleteUser(@NonNull @PathVariable Long id) {
         Map<String, Object> response = new HashMap<>();
-        response.put("status", "success");
-        response.put("message", "User with ID " + id + " deleted successfully");
-        userService.deleteUser(id);
-        return ResponseEntity.ok(response);
+        try {
+            userService.deleteUser(id);
+            response.put("status", "success");
+            response.put("message", "User deleted successfully");
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            response.put("status", "error");
+            response.put("message", e.getMessage());
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(response);
+        }
     }
 
     /**
