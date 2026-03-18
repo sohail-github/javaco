@@ -1,0 +1,682 @@
+2026-03-18T13:20:37.539+05:30  INFO 29072 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 29072 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:20:37.547+05:30 DEBUG 29072 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:20:37.549+05:30  INFO 29072 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:20:37.647+05:30  INFO 29072 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-18T13:20:37.648+05:30  INFO 29072 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-18T13:20:39.257+05:30  INFO 29072 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:20:39.345+05:30  INFO 29072 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:20:40.387+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-03-18T13:20:40.403+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:20:40.404+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:20:40.485+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:20:40.485+05:30  INFO 29072 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2836 ms
+2026-03-18T13:20:40.950+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:20:41.129+05:30  INFO 29072 --- [simple-microservice] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T13:20:41.181+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:20:41.624+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:20:41.693+05:30  INFO 29072 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T13:20:42.182+05:30  INFO 29072 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3ac5c500
+2026-03-18T13:20:42.186+05:30  INFO 29072 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T13:20:42.302+05:30  WARN 29072 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:20:42.304+05:30  WARN 29072 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:20:43.422+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:20:43.498+05:30  INFO 29072 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:20:44.099+05:30  WARN 29072 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:20:44.181+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:20:45.180+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-18T13:20:45.282+05:30  INFO 29072 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8083 (http) with context path ''
+2026-03-18T13:20:45.295+05:30  INFO 29072 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Started App in 8.352 seconds (process running for 9.081)
+2026-03-18T13:20:45.841+05:30 DEBUG 29072 --- [simple-microservice] [restartedMain] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+2026-03-18T13:20:53.120+05:30  INFO 29072 --- [simple-microservice] [http-nio-8083-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-18T13:20:53.122+05:30  INFO 29072 --- [simple-microservice] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-18T13:20:53.125+05:30  INFO 29072 --- [simple-microservice] [http-nio-8083-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-03-18T13:20:53.313+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:20:53.605+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:20:56.540+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:20:57.252+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:21:26.664+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:21:51.976+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:21:52.003+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:22:21.992+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:22:51.987+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-5] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:23:21.995+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:23:51.986+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:24:22.981+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-8] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:24:52.980+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:25:55.104+05:30 DEBUG 29072 --- [simple-microservice] [http-nio-8083-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:28:13.870+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 13588 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:28:13.872+05:30 DEBUG 13588 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:28:13.873+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:28:13.933+05:30  INFO 13588 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-18T13:28:13.935+05:30  INFO 13588 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-18T13:28:15.341+05:30  INFO 13588 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:28:15.470+05:30  INFO 13588 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:28:18.011+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-03-18T13:28:18.051+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:28:18.054+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:28:18.278+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:28:18.280+05:30  INFO 13588 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4344 ms
+2026-03-18T13:28:18.291+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:28:18.741+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:28:18.949+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:28:19.279+05:30  INFO 13588 --- [simple-microservice] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T13:28:19.407+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:28:20.198+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:28:20.283+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T13:28:21.364+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25aad0b6
+2026-03-18T13:28:21.370+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T13:28:21.455+05:30  WARN 13588 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:28:21.457+05:30  WARN 13588 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:28:22.618+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:28:22.705+05:30  INFO 13588 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:28:23.336+05:30  WARN 13588 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:28:23.428+05:30  INFO 13588 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:28:24.345+05:30  WARN 13588 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-03-18T13:28:24.396+05:30  WARN 13588 --- [simple-microservice] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-18T13:28:24.399+05:30  INFO 13588 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:28:24.411+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-18T13:28:24.432+05:30  INFO 13588 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-18T13:28:24.465+05:30  INFO 13588 --- [simple-microservice] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-18T13:28:24.530+05:30 ERROR 13588 --- [simple-microservice] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2026-03-18T13:28:40.472+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 24124 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:28:40.474+05:30 DEBUG 24124 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:28:40.475+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:28:40.548+05:30  INFO 24124 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-18T13:28:40.549+05:30  INFO 24124 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-18T13:28:41.782+05:30  INFO 24124 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:28:41.904+05:30  INFO 24124 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:28:43.311+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8083 (http)
+2026-03-18T13:28:43.345+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:28:43.347+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:28:43.559+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:28:43.561+05:30  INFO 24124 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3011 ms
+2026-03-18T13:28:43.927+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:28:43.993+05:30  WARN 29072 --- [simple-microservice] [http-nio-8083-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:28:44.781+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:28:45.025+05:30  INFO 24124 --- [simple-microservice] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T13:28:45.165+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:28:45.810+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:28:45.842+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T13:28:46.239+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@66777885
+2026-03-18T13:28:46.243+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T13:28:46.309+05:30  WARN 24124 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:28:46.311+05:30  WARN 24124 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:28:47.324+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:28:47.408+05:30  INFO 24124 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:28:48.106+05:30  WARN 24124 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:28:48.182+05:30  INFO 24124 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:28:48.959+05:30  WARN 24124 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-03-18T13:28:49.011+05:30  WARN 24124 --- [simple-microservice] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-18T13:28:49.013+05:30  INFO 24124 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:28:49.027+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-18T13:28:49.044+05:30  INFO 24124 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-18T13:28:49.075+05:30  INFO 24124 --- [simple-microservice] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-18T13:28:49.146+05:30 ERROR 24124 --- [simple-microservice] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8083 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8083 or configure this application to listen on another port.
+
+2026-03-18T13:29:22.889+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 14744 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:29:22.891+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:29:22.892+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:29:22.978+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-18T13:29:22.979+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-18T13:29:24.197+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:29:24.326+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:29:26.185+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-18T13:29:26.218+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:29:26.220+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:29:26.414+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:29:26.415+05:30  INFO 14744 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3435 ms
+2026-03-18T13:29:27.105+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:29:27.331+05:30  INFO 14744 --- [simple-microservice] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T13:29:27.435+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:29:28.192+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:29:28.282+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T13:29:28.986+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25aad0b6
+2026-03-18T13:29:28.990+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T13:29:29.075+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:29:29.079+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:29:30.840+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:29:31.005+05:30  INFO 14744 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:29:32.766+05:30  WARN 14744 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:29:32.857+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:29:34.186+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-18T13:29:34.305+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-18T13:29:34.333+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Started App in 12.045 seconds (process running for 12.51)
+2026-03-18T13:29:34.623+05:30  INFO 14744 --- [simple-microservice] [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-03-18T13:29:34.625+05:30  INFO 14744 --- [simple-microservice] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-03-18T13:29:34.628+05:30  INFO 14744 --- [simple-microservice] [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-03-18T13:29:35.339+05:30 DEBUG 14744 --- [simple-microservice] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:29:35.697+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+2026-03-18T13:29:36.076+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:29:39.233+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:29:39.287+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:29:46.047+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:29:46.058+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:32.905+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 33568 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:30:32.907+05:30 DEBUG 33568 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:30:32.908+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:30:32.971+05:30  INFO 33568 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-18T13:30:32.972+05:30  INFO 33568 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-18T13:30:33.965+05:30  INFO 33568 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:30:34.064+05:30  INFO 33568 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 85 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:30:34.783+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:34.786+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:30:34.835+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:35.440+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:30:35.442+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:35.468+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:35.536+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-18T13:30:35.575+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:30:35.579+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:30:35.795+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:30:35.797+05:30  INFO 33568 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2823 ms
+2026-03-18T13:30:36.204+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:30:36.207+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:36.234+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:36.345+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:30:36.553+05:30  INFO 33568 --- [simple-microservice] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T13:30:36.660+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:30:36.678+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:36.678+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:30:36.698+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:37.439+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:30:37.534+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T13:30:38.599+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30169a7
+2026-03-18T13:30:38.606+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T13:30:38.833+05:30  WARN 33568 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:30:38.837+05:30  WARN 33568 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:30:39.227+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:39.227+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:30:39.249+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:39.740+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:39.749+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:41.230+05:30 DEBUG 14744 --- [simple-microservice] [http-nio-8081-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:30:41.271+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:41.277+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:41.607+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:30:41.739+05:30 DEBUG 14744 --- [simple-microservice] [http-nio-8081-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:30:41.770+05:30  INFO 33568 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:30:41.789+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:41.798+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:43.478+05:30  WARN 33568 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:30:43.626+05:30  INFO 33568 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:30:43.743+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:43.775+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:30:43.775+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:44.399+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:44.409+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:45.142+05:30  WARN 33568 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-03-18T13:30:45.244+05:30  WARN 33568 --- [simple-microservice] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-18T13:30:45.252+05:30  INFO 33568 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:30:45.269+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-18T13:30:45.309+05:30  INFO 33568 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-18T13:30:45.383+05:30  INFO 33568 --- [simple-microservice] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-18T13:30:45.469+05:30 ERROR 33568 --- [simple-microservice] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-03-18T13:30:51.579+05:30 DEBUG 14744 --- [simple-microservice] [http-nio-8081-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:30:51.617+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:51.624+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:30:57.091+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api.]
+2026-03-18T13:30:57.122+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:30:57.135+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:31:03.220+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:31:03.220+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:31:03.248+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:31:13.776+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:31:13.776+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:31:13.799+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:31:34.537+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:31:34.545+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:31:34.594+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:33:13.422+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 2184 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:33:13.424+05:30 DEBUG 2184 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:33:13.427+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:33:13.504+05:30  INFO 2184 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-03-18T13:33:13.505+05:30  INFO 2184 --- [simple-microservice] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-03-18T13:33:14.924+05:30  INFO 2184 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:33:15.065+05:30  INFO 2184 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 125 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:33:17.593+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-18T13:33:17.626+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:33:17.627+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:33:17.844+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:33:17.845+05:30  INFO 2184 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4340 ms
+2026-03-18T13:33:18.388+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:33:18.592+05:30  INFO 2184 --- [simple-microservice] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-03-18T13:33:18.703+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:33:19.467+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:33:19.553+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-03-18T13:33:19.584+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:33:19.604+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:33:20.641+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25aad0b6
+2026-03-18T13:33:20.647+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-03-18T13:33:20.797+05:30  WARN 2184 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:33:20.802+05:30  WARN 2184 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:33:20.823+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:33:20.845+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:33:21.330+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:33:21.352+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:33:21.513+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:33:21.528+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:33:23.743+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:33:23.914+05:30  INFO 2184 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:33:25.083+05:30  WARN 2184 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:33:25.161+05:30  INFO 2184 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:33:26.011+05:30  WARN 2184 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2026-03-18T13:33:26.068+05:30  WARN 2184 --- [simple-microservice] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-03-18T13:33:26.070+05:30  INFO 2184 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:33:26.080+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-18T13:33:26.098+05:30  INFO 2184 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-18T13:33:26.133+05:30  INFO 2184 --- [simple-microservice] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-03-18T13:33:26.199+05:30 ERROR 2184 --- [simple-microservice] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2026-03-18T13:33:29.457+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:33:29.506+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:33:39.435+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:33:39.467+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:04.446+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:36:04.456+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:07.941+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:36:07.941+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:07.982+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:16.565+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:16.566+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:36:16.619+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:23.054+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:23.060+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource styles.css.]
+2026-03-18T13:36:23.116+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:24.232+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:24.238+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:26.088+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource api.]
+2026-03-18T13:36:26.114+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:26.122+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:27.041+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:27.050+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:28.213+05:30 DEBUG 14744 --- [simple-microservice] [http-nio-8081-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:36:28.275+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:28.291+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:36:30.086+05:30 DEBUG 14744 --- [simple-microservice] [http-nio-8081-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.email,
+        u1_0.is_active,
+        u1_0.is_deleted,
+        u1_0.name,
+        u1_0.phone,
+        u1_0.updated_at,
+        u1_0.updated_by 
+    from
+        users u1_0
+2026-03-18T13:36:30.140+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource .well-known/appspecific/com.chrome.devtools.json.]
+2026-03-18T13:36:30.145+05:30  WARN 14744 --- [simple-microservice] [http-nio-8081-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico.]
+2026-03-18T13:38:44.501+05:30  INFO 14744 --- [simple-microservice] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2026-03-18T13:38:44.534+05:30  INFO 14744 --- [simple-microservice] [Thread-5] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:38:44.543+05:30  INFO 14744 --- [simple-microservice] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-03-18T13:38:44.562+05:30  INFO 14744 --- [simple-microservice] [Thread-5] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-03-18T13:38:44.726+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 14744 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:38:44.727+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:38:44.728+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:38:45.101+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:38:45.132+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:38:45.256+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-18T13:38:45.257+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:38:45.258+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:38:45.286+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:38:45.287+05:30  INFO 14744 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 555 ms
+2026-03-18T13:38:45.329+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:38:45.335+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:38:45.342+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:38:45.344+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2026-03-18T13:38:45.366+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33d1122b
+2026-03-18T13:38:45.366+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2026-03-18T13:38:45.367+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:38:45.368+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:38:45.450+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:38:45.468+05:30  INFO 14744 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:38:45.628+05:30  WARN 14744 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:38:45.634+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:38:45.715+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-18T13:38:45.726+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-18T13:38:45.729+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Started App in 1.049 seconds (process running for 563.906)
+2026-03-18T13:38:45.734+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+2026-03-18T13:38:45.744+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-18T13:40:43.875+05:30  INFO 14744 --- [simple-microservice] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 6 deletions, 26 modifications)
+2026-03-18T13:40:43.884+05:30  INFO 14744 --- [simple-microservice] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:40:43.885+05:30  INFO 14744 --- [simple-microservice] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2026-03-18T13:40:43.888+05:30  INFO 14744 --- [simple-microservice] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2026-03-18T13:41:48.513+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 14744 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:41:48.514+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:41:48.514+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:41:48.678+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:41:48.696+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:41:48.785+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-18T13:41:48.786+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:41:48.788+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:41:48.820+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:41:48.821+05:30  INFO 14744 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 304 ms
+2026-03-18T13:41:48.870+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:41:48.877+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:41:48.885+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:41:48.887+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2026-03-18T13:41:48.923+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b84f108
+2026-03-18T13:41:48.923+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2026-03-18T13:41:48.924+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:41:48.925+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:41:49.060+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:41:49.092+05:30  INFO 14744 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:41:49.287+05:30  WARN 14744 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:41:49.296+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:41:49.411+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-18T13:41:49.426+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-18T13:41:49.429+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Started App in 0.968 seconds (process running for 747.606)
+2026-03-18T13:41:49.438+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+2026-03-18T13:41:49.450+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-18T13:41:58.892+05:30  INFO 14744 --- [simple-microservice] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 27 class path changes (0 additions, 0 deletions, 27 modifications)
+2026-03-18T13:41:58.899+05:30  INFO 14744 --- [simple-microservice] [Thread-11] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:41:58.900+05:30  INFO 14744 --- [simple-microservice] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2026-03-18T13:41:58.906+05:30  INFO 14744 --- [simple-microservice] [Thread-11] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2026-03-18T13:41:59.030+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Starting App using Java 21.0.10 with PID 14744 (C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject\target\classes started by Sohail in C:\Users\Sohail\Documents\ppp\javaco\javaco\codee\coeproject)
+2026-03-18T13:41:59.030+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-03-18T13:41:59.030+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : No active profile set, falling back to 1 default profile: "default"
+2026-03-18T13:41:59.450+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-03-18T13:41:59.473+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 21 ms. Found 3 JPA repository interfaces.
+2026-03-18T13:41:59.571+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2026-03-18T13:41:59.574+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-03-18T13:41:59.575+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-03-18T13:41:59.603+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2026-03-18T13:41:59.604+05:30  INFO 14744 --- [simple-microservice] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 563 ms
+2026-03-18T13:41:59.636+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-03-18T13:41:59.641+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-03-18T13:41:59.646+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-03-18T13:41:59.646+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2026-03-18T13:41:59.662+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@767d41da
+2026-03-18T13:41:59.663+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2026-03-18T13:41:59.663+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-03-18T13:41:59.663+05:30  WARN 14744 --- [simple-microservice] [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-03-18T13:41:59.732+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-03-18T13:41:59.750+05:30  INFO 14744 --- [simple-microservice] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:41:59.866+05:30  WARN 14744 --- [simple-microservice] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-03-18T13:41:59.866+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2026-03-18T13:41:59.932+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2026-03-18T13:41:59.940+05:30  INFO 14744 --- [simple-microservice] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path ''
+2026-03-18T13:41:59.943+05:30  INFO 14744 --- [simple-microservice] [restartedMain] com.example.microservice.App             : Started App in 0.957 seconds (process running for 758.119)
+2026-03-18T13:41:59.947+05:30 DEBUG 14744 --- [simple-microservice] [restartedMain] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        User x */ select
+            count(*) 
+        from
+            users u1_0
+2026-03-18T13:41:59.953+05:30  INFO 14744 --- [simple-microservice] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2026-03-18T13:42:41.335+05:30  INFO 14744 --- [simple-microservice] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 32 class path changes (0 additions, 6 deletions, 26 modifications)
+2026-03-18T13:42:41.341+05:30  INFO 14744 --- [simple-microservice] [Thread-22] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-03-18T13:42:41.342+05:30  INFO 14744 --- [simple-microservice] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2026-03-18T13:42:41.345+05:30  INFO 14744 --- [simple-microservice] [Thread-22] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.

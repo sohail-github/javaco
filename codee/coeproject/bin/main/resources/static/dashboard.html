@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Production-grade Microservices Management Dashboard">
+    <title>Microservices Dashboard - Professional Edition</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">
+                <span class="logo-icon">⚙️</span>
+                <h1>Microservices Hub</h1>
+            </div>
+        </div>
+        <div class="header-right">
+            <div id="serverStatus" class="status-badge status-loading">● Checking...</div>
+            <button id="refreshBtn" class="header-btn" title="Refresh all data">🔄 Refresh</button>
+        </div>
+    </header>
+
+    <!-- Main Navigation -->
+    <nav class="main-nav">
+        <div class="nav-tabs">
+            <button class="nav-tab active" data-section="users">
+                <span class="icon">👤</span>
+                <span class="label">Users</span>
+            </button>
+            <button class="nav-tab" data-section="products">
+                <span class="icon">📦</span>
+                <span class="label">Products</span>
+            </button>
+            <button class="nav-tab" data-section="orders">
+                <span class="icon">📋</span>
+                <span class="label">Orders</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Users Section -->
+        <section id="users-section" class="content-section active">
+            <div class="section-header">
+                <div>
+                    <h2>User Management</h2>
+                    <p class="section-subtitle">Manage system users and their profiles</p>
+                </div>
+                <div class="section-actions">
+                    <input type="text" id="userSearch" class="search-input" placeholder="Search users...">
+                    <button id="addUserBtn" class="btn btn-primary">+ Add User</button>
+                </div>
+            </div>
+
+            <!-- Users Table -->
+            <div class="table-wrapper">
+                <table id="usersTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Status</th>
+                            <th>Created</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="usersBody">
+                        <tr class="loading-row">
+                            <td colspan="7" class="center">
+                                <div class="spinner"></div>
+                                <p>Loading users...</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Add/Edit User Modal -->
+            <div id="userModal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="userModalTitle">Add New User</h3>
+                        <button class="modal-close" onclick="closeModal('userModal')">✕</button>
+                    </div>
+                    <form id="userForm" class="modal-form">
+                        <div class="form-group">
+                            <label for="userNameInput">Name *</label>
+                            <input type="text" id="userNameInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmailInput">Email *</label>
+                            <input type="email" id="userEmailInput" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userPhoneInput">Phone</label>
+                            <input type="tel" id="userPhoneInput">
+                        </div>
+                        <div class="modal-actions">
+                            <button type="submit" class="btn btn-success">Save User</button>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="closeModal('userModal')">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products-section" class="content-section">
+            <div class="section-header">
+                <div>
+                    <h2>Product Management</h2>
+                    <p class="section-subtitle">Manage inventory and product listings</p>
+                </div>
+                <div class="section-actions">
+                    <input type="text" id="productSearch" class="search-input" placeholder="Search products...">
+                    <button id="addProductBtn" class="btn btn-primary">+ Add Product</button>
+                </div>
+            </div>
+
+            <!-- Products Table -->
+            <div class="table-wrapper">
+                <table id="productsTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>SKU</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Category</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productsBody">
+                        <tr class="loading-row">
+                            <td colspan="8" class="center">
+                                <div class="spinner"></div>
+                                <p>Loading products...</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Add/Edit Product Modal -->
+            <div id="productModal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="productModalTitle">Add New Product</h3>
+                        <button class="modal-close" onclick="closeModal('productModal')">✕</button>
+                    </div>
+                    <form id="productForm" class="modal-form">
+                        <div class="form-group">
+                            <label for="productNameInput">Product Name *</label>
+                            <input type="text" id="productNameInput" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="productSkuInput">SKU *</label>
+                                <input type="text" id="productSkuInput" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productCategoryInput">Category</label>
+                                <input type="text" id="productCategoryInput">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="productPriceInput">Price *</label>
+                                <input type="number" id="productPriceInput" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productQtyInput">Quantity *</label>
+                                <input type="number" id="productQtyInput" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productDescInput">Description</label>
+                            <textarea id="productDescInput" rows="3"></textarea>
+                        </div>
+                        <div class="modal-actions">
+                            <button type="submit" class="btn btn-success">Save Product</button>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="closeModal('productModal')">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Orders Section -->
+        <section id="orders-section" class="content-section">
+            <div class="section-header">
+                <div>
+                    <h2>Order Management</h2>
+                    <p class="section-subtitle">Track and manage customer orders</p>
+                </div>
+                <div class="section-actions">
+                    <select id="orderStatusFilter" class="filter-select">
+                        <option value="">All Statuses</option>
+                        <option value="PENDING">Pending</option>
+                        <option value="CONFIRMED">Confirmed</option>
+                        <option value="SHIPPED">Shipped</option>
+                        <option value="DELIVERED">Delivered</option>
+                    </select>
+                    <button id="addOrderBtn" class="btn btn-primary">+ Create Order</button>
+                </div>
+            </div>
+
+            <!-- Orders Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Total Orders</div>
+                    <div class="stat-value" id="totalOrders">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Pending</div>
+                    <div class="stat-value" id="pendingOrders">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Shipped</div>
+                    <div class="stat-value" id="shippedOrders">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Delivered</div>
+                    <div class="stat-value" id="deliveredOrders">0</div>
+                </div>
+            </div>
+
+            <!-- Orders Table -->
+            <div class="table-wrapper">
+                <table id="ordersTable" class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Order #</th>
+                            <th>User</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ordersBody">
+                        <tr class="loading-row">
+                            <td colspan="8" class="center">
+                                <div class="spinner"></div>
+                                <p>Loading orders...</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Add/Edit Order Modal -->
+            <div id="orderModal" class="modal hidden">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 id="orderModalTitle">Create New Order</h3>
+                        <button class="modal-close" onclick="closeModal('orderModal')">✕</button>
+                    </div>
+                    <form id="orderForm" class="modal-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderUserInput">User *</label>
+                                <select id="orderUserInput" required></select>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderProductInput">Product *</label>
+                                <select id="orderProductInput" required></select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderQtyInput">Quantity *</label>
+                                <input type="number" id="orderQtyInput" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderStatusInput">Status</label>
+                                <select id="orderStatusInput">
+                                    <option value="PENDING">Pending</option>
+                                    <option value="CONFIRMED">Confirmed</option>
+                                    <option value="SHIPPED">Shipped</option>
+                                    <option value="DELIVERED">Delivered</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderShippingInput">Shipping Address</label>
+                            <textarea id="orderShippingInput" rows="2"></textarea>
+                        </div>
+                        <div class="modal-actions">
+                            <button type="submit" class="btn btn-success">Create Order</button>
+                            <button type="button" class="btn btn-secondary"
+                                onclick="closeModal('orderModal')">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Scripts -->
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -3,6 +3,8 @@ package com.example.microservice.entity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 import java.time.LocalDateTime;
 import java.math.BigDecimal;
 
@@ -58,9 +60,11 @@ public class Order {
     @Column(name = "is_deleted", nullable = false)
     private Boolean isDeleted = false;
 
+    @CreationTimestamp
     @Column(name = "created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
+    @UpdateTimestamp
     @Column(name = "updated_at")
     private LocalDateTime updatedAt;
 
@@ -86,10 +90,11 @@ public class Order {
     // JPA Lifecycle methods
     @PrePersist
     protected void onCreate() {
-        createdAt = LocalDateTime.now();
-        updatedAt = LocalDateTime.now();
         if (createdBy == null) {
             createdBy = "SYSTEM";
+        }
+        if (updatedBy == null) {
+            updatedBy = "SYSTEM";
         }
         if (totalAmount == null && unitPrice != null && quantity != null) {
             totalAmount = unitPrice.multiply(BigDecimal.valueOf(quantity));
@@ -98,7 +103,9 @@ public class Order {
 
     @PreUpdate
     protected void onUpdate() {
-        updatedAt = LocalDateTime.now();
+        if (updatedBy == null) {
+            updatedBy = "SYSTEM";
+        }
     }
 
     // Getters and Setters

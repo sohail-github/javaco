@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microservices Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>AIzaSyA4hm46WWcvQzqHQol424eba62gHzZurhM
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1>🚀 Microservices Dashboard</h1>
+                <p class="subtitle">User • Product • Order Management</p>
+            </div>
+            <div class="server-status">
+                <span id="serverStatus" class="status-indicator">Checking...</span>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="tabs">
+            <button class="tab-btn active" data-tab="users">👤 Users</button>
+            <button class="tab-btn" data-tab="products">📦 Products</button>
+            <button class="tab-btn" data-tab="orders">📋 Orders</button>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Users Tab -->
+            <section id="users-tab" class="tab-content active">
+                <div class="section-header">
+                    <h2>User Management</h2>
+                    <button id="addUserBtn" class="btn btn-primary">+ Add User</button>
+                </div>
+
+                <!-- Add/Edit User Form -->
+                <div id="userForm" class="form-container hidden">
+                    <h3 id="userFormTitle">Add New User</h3>
+                    <form id="userFormElement">
+                        <input type="hidden" id="userId">
+                        <div class="form-group">
+                            <label for="userName">Name *</label>
+                            <input type="text" id="userName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userEmail">Email *</label>
+                            <input type="email" id="userEmail" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="userPhone">Phone</label>
+                            <input type="tel" id="userPhone">
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success">Save User</button>
+                            <button type="button" id="cancelUserBtn" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Users Table -->
+                <div class="table-container">
+                    <table id="usersTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Status</th>
+                                <th>Created At</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="usersTableBody">
+                            <tr>
+                                <td colspan="7" class="loading">Loading users...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Products Tab -->
+            <section id="products-tab" class="tab-content">
+                <div class="section-header">
+                    <h2>Product Management</h2>
+                    <button id="addProductBtn" class="btn btn-primary">+ Add Product</button>
+                </div>
+
+                <!-- Add/Edit Product Form -->
+                <div id="productForm" class="form-container hidden">
+                    <h3 id="productFormTitle">Add New Product</h3>
+                    <form id="productFormElement">
+                        <input type="hidden" id="productId">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="productName">Name *</label>
+                                <input type="text" id="productName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productSku">SKU *</label>
+                                <input type="text" id="productSku" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="productDescription">Description</label>
+                            <textarea id="productDescription"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="productPrice">Price *</label>
+                                <input type="number" id="productPrice" step="0.01" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productQuantity">Quantity *</label>
+                                <input type="number" id="productQuantity" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="productCategory">Category</label>
+                                <input type="text" id="productCategory">
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success">Save Product</button>
+                            <button type="button" id="cancelProductBtn" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Products Table -->
+                <div class="table-container">
+                    <table id="productsTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>SKU</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productsTableBody">
+                            <tr>
+                                <td colspan="8" class="loading">Loading products...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Orders Tab -->
+            <section id="orders-tab" class="tab-content">
+                <div class="section-header">
+                    <h2>Order Management</h2>
+                    <button id="addOrderBtn" class="btn btn-primary">+ New Order</button>
+                    <button id="statsBtn" class="btn btn-info">📊 Statistics</button>
+                </div>
+
+                <!-- Order Statistics -->
+                <div id="statsContainer" class="stats-container hidden">
+                    <div class="stat-card">
+                        <h4>Total Orders</h4>
+                        <p id="statTotal" class="stat-value">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Pending</h4>
+                        <p id="statPending" class="stat-value">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Confirmed</h4>
+                        <p id="statConfirmed" class="stat-value">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Shipped</h4>
+                        <p id="statShipped" class="stat-value">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Delivered</h4>
+                        <p id="statDelivered" class="stat-value">0</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Cancelled</h4>
+                        <p id="statCancelled" class="stat-value">0</p>
+                    </div>
+                </div>
+
+                <!-- Add/Edit Order Form -->
+                <div id="orderForm" class="form-container hidden">
+                    <h3 id="orderFormTitle">Create New Order</h3>
+                    <form id="orderFormElement">
+                        <input type="hidden" id="orderId">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderUserId">User ID *</label>
+                                <input type="number" id="orderUserId" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderProductId">Product ID *</label>
+                                <input type="number" id="orderProductId" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="orderQuantity">Quantity *</label>
+                                <input type="number" id="orderQuantity" min="1" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="orderStatus">Status</label>
+                                <select id="orderStatus">
+                                    <option value="PENDING">PENDING</option>
+                                    <option value="CONFIRMED">CONFIRMED</option>
+                                    <option value="SHIPPED">SHIPPED</option>
+                                    <option value="DELIVERED">DELIVERED</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderAddress">Shipping Address</label>
+                            <textarea id="orderAddress"></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-success">Create Order</button>
+                            <button type="button" id="cancelOrderBtn" class="btn btn-secondary">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Orders Table -->
+                <div class="table-container">
+                    <table id="ordersTable" class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Order Number</th>
+                                <th>User ID</th>
+                                <th>Product ID</th>
+                                <th>Quantity</th>
+                                <th>Total Amount</th>
+                                <th>Status</th>
+                                <th>Created At</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersTableBody">
+                            <tr>
+                                <td colspan="9" class="loading">Loading orders...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Modal for viewing details -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
